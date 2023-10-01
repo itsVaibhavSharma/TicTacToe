@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nointernet">
+
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="271dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-72dp"
+        android:layout_marginEnd="-100dp"
+        app:srcCompat="@drawable/o"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-100dp" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="220dp"
+        android:layout_height="240dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:paddingLeft="-2dp"
+        app:srcCompat="@drawable/x"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp" />
+
+
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playeronewall2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="No Internet"
+        android:layout_marginTop="200dp"
+        android:textColor="#DC0C2653"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playeronewall2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="The Game is unable to find any internet connection. Please check your internet connection and refresh to continue playing this game."
+        android:layout_marginTop="270dp"
+        android:textStyle="bold"
+        android:textColor="@color/colortextsecondaRY"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="450dp"
+        android:background="@drawable/backwhite"
+        android:fontFamily="sans-serif-light"
+        android:text="Refresh" />
+
+
+</RelativeLayout>

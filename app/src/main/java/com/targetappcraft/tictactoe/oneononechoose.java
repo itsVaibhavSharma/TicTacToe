@@ -1,0 +1,513 @@
+package com.targetappcraft.tictactoe;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.media.AudioAttributes;
+import android.media.AudioManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+import android.widget.RadioButton;
+import com.google.android.gms.ads.AdView;
+import com.targetappcraft.tictactoe.ads.admob;
+import com.targetappcraft.tictactoe.ads.adsunit;
+import java.util.Timer;
+import java.util.TimerTask;
+
+
+public class oneononechoose extends AppCompatActivity {
+    CharSequence player1 = "Player 1";
+    CharSequence player2 = "Player 2";
+    public boolean selectedsingleplayer = true;
+    private View decorView;
+    boolean player1ax;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_oneononechoose);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow(); // in Activity's onCreate() for instance
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+        //banner load
+        admob.setbanner(findViewById(R.id.banner_container), oneononechoose.this);
+        if (adsunit.mRewardedIntAd == null) {
+            admob.loadintrev(oneononechoose.this);
+
+        }
+        if (adsunit.mRewardedAd == null) {
+            admob.loadrew(oneononechoose.this);
+
+        }
+        if (adsunit.mInterstitial == null) {
+            admob.loadint(oneononechoose.this);
+
+        }
+
+        SharedPreferences sfx = getApplicationContext().getSharedPreferences("sfxpref", MODE_PRIVATE);
+        Boolean sfxb = sfx.getBoolean("sfx", true);
+        if (sfxb) {
+
+        }
+        ImageView imageView11 = findViewById(R.id.imageView11);
+
+        imageView11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(oneononechoose.this, oonocoins.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        //themes
+        SharedPreferences themes = getApplicationContext().getSharedPreferences("themes", MODE_PRIVATE);
+        boolean themea1 = themes.getBoolean("themea1", true);
+        boolean themea2 = themes.getBoolean("themea2", false);
+        boolean themea3 = themes.getBoolean("themea3", false);
+        boolean themea4 = themes.getBoolean("themea4", false);
+        boolean themea5 = themes.getBoolean("themea5", false);
+        boolean themea6 = themes.getBoolean("themea6", false);
+        boolean themea7 = themes.getBoolean("themea7", false);
+        boolean themea8 = themes.getBoolean("themea8", false);
+        boolean themea9 = themes.getBoolean("themea9", false);
+        boolean themea10 = themes.getBoolean("themea10", false);
+        boolean themea11 = themes.getBoolean("themea11", false);
+
+        int gold = getIntent().getIntExtra("gold",0);
+        Boolean already = getIntent().getBooleanExtra("already",false);
+        checkinternet();
+        //NAVIGATION HIDE
+        decorView = getWindow().getDecorView();
+        decorView.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
+            @Override
+            public void onSystemUiVisibilityChange(int visibility) {
+                if (visibility == 0)
+                    decorView.setSystemUiVisibility(hideSystembars());
+            }
+        });
+//NAVIGATION END
+
+        CharSequence[] players = getIntent().getCharSequenceArrayExtra("playersnames");
+        player1 = players[0];
+        player2 = players[1];
+
+        final ImageView imageView = findViewById(R.id.imageView);
+        final ImageView imageView2 = findViewById(R.id.imageView2);
+        imageView.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        imageView2.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        final RadioButton r1 = findViewById(R.id.player1o);
+        final RadioButton r2 = findViewById(R.id.player1x);
+        final int textColor = Color.parseColor("#e5e9ea");
+        final int textColorBlue = Color.parseColor("#3b7df8");
+
+        if (themea1){
+
+
+
+        } else if(themea2){
+            imageView.setImageResource(R.drawable.x1);
+            imageView2.setImageResource(R.drawable.o1);
+
+        } else if (themea3){
+            imageView.setImageResource(R.drawable.x2);
+            imageView2.setImageResource(R.drawable.o2);
+        } else if (themea4){
+            imageView.setImageResource(R.drawable.x3);
+            imageView2.setImageResource(R.drawable.o3);
+        } else if (themea5){
+            imageView.setImageResource(R.drawable.x4);
+            imageView2.setImageResource(R.drawable.o4);
+        } else if (themea6){
+            imageView.setImageResource(R.drawable.x5);
+            imageView2.setImageResource(R.drawable.o5);
+        }else if (themea7){
+            imageView.setImageResource(R.drawable.x6);
+            imageView2.setImageResource(R.drawable.o6);
+        }else if (themea8){
+            imageView.setImageResource(R.drawable.x7);
+            imageView2.setImageResource(R.drawable.o7);
+        } else if(themea9){
+            imageView.setImageResource(R.drawable.x8);
+            imageView2.setImageResource(R.drawable.o8);
+        }else if (themea10){
+            imageView.setImageResource(R.drawable.x9);
+            imageView2.setImageResource(R.drawable.o9);
+        } else if(themea11){
+            imageView.setImageResource(R.drawable.x10);
+            imageView2.setImageResource(R.drawable.o10);
+        }
+
+
+
+        r1.post(new Runnable() {
+            @Override
+            public void run() {
+                if (r1.isChecked()) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        r1.setButtonTintList(ColorStateList.valueOf(textColorBlue));
+                    }
+
+
+                } else {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        r1.setButtonTintList(ColorStateList.valueOf(textColor));
+                    }
+                }
+                r1.postDelayed(this, 10);
+            }
+        });
+
+        r2.post(new Runnable() {
+            @Override
+            public void run() {
+                if (r2.isChecked()) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        r2.setButtonTintList(ColorStateList.valueOf(textColorBlue));
+                    }
+                } else {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        r2.setButtonTintList(ColorStateList.valueOf(textColor));
+                    }
+
+                }
+                r2.postDelayed(this, 10);
+            }
+        });
+
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                r2.setChecked(false);
+                r1.setChecked(true);
+
+                imageView2.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                player1ax = false;
+                if (themea1){
+                    imageView2.setImageResource(R.drawable.oo);
+                    imageView.setImageResource(R.drawable.xxsh);
+
+                } else if(themea2){
+                    imageView2.setImageResource(R.drawable.o1);
+                    imageView.setImageResource(R.drawable.x1);
+
+
+                } else if (themea3){
+                    imageView2.setImageResource(R.drawable.o2);
+                    imageView.setImageResource(R.drawable.x2);
+                } else if (themea4){
+                    imageView2.setImageResource(R.drawable.o3);
+                    imageView.setImageResource(R.drawable.x3);
+                } else if (themea5){
+                    imageView2.setImageResource(R.drawable.o4);
+                    imageView.setImageResource(R.drawable.x4);
+                } else if (themea6){
+                    imageView2.setImageResource(R.drawable.o5);
+                    imageView.setImageResource(R.drawable.x5);
+                }else if (themea7){
+                    imageView2.setImageResource(R.drawable.o6);
+                    imageView.setImageResource(R.drawable.x6);
+                }else if (themea8){
+                    imageView2.setImageResource(R.drawable.o7);
+                    imageView.setImageResource(R.drawable.x7);
+                } else if(themea9){
+                    imageView2.setImageResource(R.drawable.o8);
+                    imageView.setImageResource(R.drawable.x8);
+                }else if (themea10){
+                    imageView2.setImageResource(R.drawable.o9);
+                    imageView.setImageResource(R.drawable.x9);
+                } else if(themea11){
+                    imageView2.setImageResource(R.drawable.o10);
+                    imageView.setImageResource(R.drawable.x10);
+                }
+                imageView.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+
+
+            }
+        });
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                r1.setChecked(false);
+                r2.setChecked(true);
+                player1ax = true;
+                imageView.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                if (themea1){
+                    imageView2.setImageResource(R.drawable.ooh);
+                    imageView.setImageResource(R.drawable.xxs);
+
+                } else if(themea2){
+                    imageView2.setImageResource(R.drawable.o1);
+                    imageView.setImageResource(R.drawable.x1);
+
+
+                } else if (themea3){
+                    imageView2.setImageResource(R.drawable.o2);
+                    imageView.setImageResource(R.drawable.x2);
+                } else if (themea4){
+                    imageView2.setImageResource(R.drawable.o3);
+                    imageView.setImageResource(R.drawable.x3);
+                } else if (themea5){
+                    imageView2.setImageResource(R.drawable.o4);
+                    imageView.setImageResource(R.drawable.x4);
+                } else if (themea6){
+                    imageView2.setImageResource(R.drawable.o5);
+                    imageView.setImageResource(R.drawable.x5);
+                }else if (themea7){
+                    imageView2.setImageResource(R.drawable.o6);
+                    imageView.setImageResource(R.drawable.x6);
+                }else if (themea8){
+                    imageView2.setImageResource(R.drawable.o7);
+                    imageView.setImageResource(R.drawable.x7);
+                } else if(themea9){
+                    imageView2.setImageResource(R.drawable.o8);
+                    imageView.setImageResource(R.drawable.x8);
+                }else if (themea10){
+                    imageView2.setImageResource(R.drawable.o9);
+                    imageView.setImageResource(R.drawable.x9);
+                } else if(themea11){
+                    imageView2.setImageResource(R.drawable.o10);
+                    imageView.setImageResource(R.drawable.x10);
+                }
+                imageView2.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+
+            }
+        });
+
+        r1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                r2.setChecked(false);
+                player1ax = false;
+                if (themea1){
+                    imageView2.setImageResource(R.drawable.oo);
+                    imageView.setImageResource(R.drawable.xxsh);
+
+                } else if(themea2){
+                    imageView2.setImageResource(R.drawable.o1);
+                    imageView.setImageResource(R.drawable.x1);
+
+
+                } else if (themea3){
+                    imageView2.setImageResource(R.drawable.o2);
+                    imageView.setImageResource(R.drawable.x2);
+                } else if (themea4){
+                    imageView2.setImageResource(R.drawable.o3);
+                    imageView.setImageResource(R.drawable.x3);
+                } else if (themea5){
+                    imageView2.setImageResource(R.drawable.o4);
+                    imageView.setImageResource(R.drawable.x4);
+                } else if (themea6){
+                    imageView2.setImageResource(R.drawable.o5);
+                    imageView.setImageResource(R.drawable.x5);
+                }else if (themea7){
+                    imageView2.setImageResource(R.drawable.o6);
+                    imageView.setImageResource(R.drawable.x6);
+                }else if (themea8){
+                    imageView2.setImageResource(R.drawable.o7);
+                    imageView.setImageResource(R.drawable.x7);
+                } else if(themea9){
+                    imageView2.setImageResource(R.drawable.o8);
+                    imageView.setImageResource(R.drawable.x8);
+                }else if (themea10){
+                    imageView2.setImageResource(R.drawable.o9);
+                    imageView.setImageResource(R.drawable.x9);
+                } else if(themea11){
+                    imageView2.setImageResource(R.drawable.o10);
+                    imageView.setImageResource(R.drawable.x10);
+                }
+                imageView2.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                imageView.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+
+
+            }
+        });
+
+        r2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                r1.setChecked(false);
+                player1ax = true;
+                if (themea1){
+                    imageView2.setImageResource(R.drawable.ooh);
+                    imageView.setImageResource(R.drawable.xxs);
+
+                } else if(themea2){
+                    imageView2.setImageResource(R.drawable.o1);
+                    imageView.setImageResource(R.drawable.x1);
+
+
+                } else if (themea3){
+                    imageView2.setImageResource(R.drawable.o2);
+                    imageView.setImageResource(R.drawable.x2);
+                } else if (themea4){
+                    imageView2.setImageResource(R.drawable.o3);
+                    imageView.setImageResource(R.drawable.x3);
+                } else if (themea5){
+                    imageView2.setImageResource(R.drawable.o4);
+                    imageView.setImageResource(R.drawable.x4);
+                } else if (themea6){
+                    imageView2.setImageResource(R.drawable.o5);
+                    imageView.setImageResource(R.drawable.x5);
+                }else if (themea7){
+                    imageView2.setImageResource(R.drawable.o6);
+                    imageView.setImageResource(R.drawable.x6);
+                }else if (themea8){
+                    imageView2.setImageResource(R.drawable.o7);
+                    imageView.setImageResource(R.drawable.x7);
+                } else if(themea9){
+                    imageView2.setImageResource(R.drawable.o8);
+                    imageView.setImageResource(R.drawable.x8);
+                }else if (themea10){
+                    imageView2.setImageResource(R.drawable.o9);
+                    imageView.setImageResource(R.drawable.x9);
+                } else if(themea11){
+                    imageView2.setImageResource(R.drawable.o10);
+                    imageView.setImageResource(R.drawable.x10);
+                }
+                imageView.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                imageView2.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+
+            }
+        });
+
+
+
+
+
+        SharedPreferences coinsandgems = getApplicationContext().getSharedPreferences("coinsandgems", MODE_PRIVATE);
+        SharedPreferences.Editor editorcoinsandgems = coinsandgems.edit();
+
+
+
+
+        int coins = coinsandgems.getInt("coins", 0);
+
+        new Timer().scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+
+
+                if (r1.isChecked() || r2.isChecked()) {
+
+                    Button ds = findViewById(R.id.button);
+                    ds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+
+                            ProgressDialog dialog = new ProgressDialog(oneononechoose.this);
+
+                            dialog.setMessage("Searching for Opponent...");
+                            dialog.setCancelable(false);
+                            dialog.show();
+                            editorcoinsandgems.putInt("coins", coins - gold);
+                            //editorcoinsandgems.putInt("gems", 90);        // Saving integer
+                            editorcoinsandgems.apply();
+
+
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    CharSequence[] players1 = getIntent().getCharSequenceArrayExtra("playersnames");
+                                    player1 = players1[0];
+                                    player2 = players1[1];
+
+                                    int gold = getIntent().getIntExtra("gold",0);
+
+                                    Intent i = new Intent(oneononechoose.this, oneononeScene.class);
+                                    CharSequence[] players = {player1, player2};
+                                    i.putExtra("playersnames", players);
+                                    i.putExtra("player1ax", player1ax);
+                                    i.putExtra("selectedsingleplayer", selectedsingleplayer);
+                                    i.putExtra("already", already);
+                                    //i.putExtra("level", level);//i.putExtra("coins", coins);
+                                    //i.putExtra("gems", gems);
+                                    i.putExtra("gold", gold);
+
+                                    startActivity(i);
+                                    finish();
+                                }
+                            }, 4000);
+
+
+                        }
+                    });
+                }
+            }
+
+
+        }, 0, 20);//put here time 1000 milliseconds = 1 second
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(oneononechoose.this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    //NAVIGATION HIDE
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            decorView.setSystemUiVisibility(hideSystembars());
+        }
+    }
+
+    private int hideSystembars() {
+        return (View.SYSTEM_UI_FLAG_LAYOUT_STABLE)
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                | View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+    }
+
+    //NAVIGATION END
+    private void checkinternet() {
+        ConnectivityManager connMgr = (ConnectivityManager) oneononechoose.this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected() && networkInfo.isAvailable()) {
+
+        } else {
+
+            Toast.makeText(this, "No Internet Connection!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(oneononechoose.this, Nointernet.class);
+            startActivity(intent);
+            oneononechoose.this.finish();
+
+        }
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+    }
+}

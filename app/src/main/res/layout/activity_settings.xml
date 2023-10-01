@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootlay"
+    android:gravity="center"
+    android:background="@drawable/backgroundbyvb"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/backbtn"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top"
+        android:background="@drawable/ic_back"
+        android:gravity="top"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+
+
+        >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="310dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="40dp"
+           android:src="@mipmap/ic_launcher"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+
+            android:text="version : 1.2.5 "
+            android:textColor="@color/tint" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Tic Tac Toe"
+
+            android:textColor="#DC0C2653"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/r3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <Switch
+            android:id="@+id/swith2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textColorLink="@color/colorAccent"
+            android:theme="@style/SCBSwitch"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/vibration"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="74dp"
+
+            android:text="Vibration"
+            android:textColor="@color/tint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="74dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/cardview_shadow_start_color"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r8"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/r3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <Switch
+            android:id="@+id/swith3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textColorLink="@color/colorAccent"
+            android:theme="@style/SCBSwitch"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/imageView4sfx"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_sfx"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="74dp"
+
+            android:text="SFX"
+            android:textColor="@color/tint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="74dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/cardview_shadow_start_color"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/r3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <Switch
+            android:id="@+id/swith4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textColorLink="@color/colorAccent"
+            android:theme="@style/SCBSwitch"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/imageView4music"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_music"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="74dp"
+
+            android:text="Music"
+            android:textColor="@color/tint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="74dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/cardview_shadow_start_color"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/r6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/r9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/star"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="74dp"
+            android:text="Rate this Game"
+
+            android:textColor="@color/tint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="74dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/r6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/feedbacks"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginStart="74dp"
+            android:text="Feedback"
+            android:textColor="@color/tint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="74dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/r6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/loginimg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_logout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginStart="74dp"
+            android:text="Google Play Games"
+            android:textColor="@color/tint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="74dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/btnsignout"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:text="SIGN OUT"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:text="SIGN IN"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            android:background="#2848FF"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:visibility="gone"
+             />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemeActivity"
+    android:background="@drawable/backgroundbyvb">
+
+
+    <RelativeLayout
+        android:id="@+id/backbtn"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:background="@drawable/ic_back"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="#686868"
+        android:gravity="center"
+        android:text="THEMES"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="150dp"
+        android:scrollbars="none"
+
+
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical"
+                android:id="@+id/themelayout1">
+
+
+                <ImageView
+                    android:id="@+id/themeimg1"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" FREE"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn1"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="APPLIED"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/themelayout2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg2"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic1"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 5000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn2"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/themelayout3"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg3"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic2"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 10000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn3"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/themelayout4"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg4"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic3"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 25000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn4"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/themelayout5"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg5"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic4"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 50000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn5"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/themelayout6"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg6"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic5"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 100000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn6"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/themelayout7"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg7"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic6"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 150000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn7"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/themelayout8"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg8"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic7"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold8"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 200000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn8"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/themelayout9"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg9"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic8"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold9"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 250000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn9"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/themelayout10"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg10"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic9"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold10"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 300000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn10"
+                   android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/themelayout11"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/themeimg11"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic10"
+
+                    ></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/gold11"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coinfinal"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/themecost11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 350000"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/purchasebtn11"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back"
+                    android:text="PURCHASE"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/coins"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/coinshome_layout"
+        android:clipToPadding="false"
+        android:elevation="5dp"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/coinsimg"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/coinfinal"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/coinsamounttext"
+            android:layout_width="85dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:background="#DCDCDC"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical|end"
+            android:paddingRight="5dp"
+            android:text="1000"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:shadowColor="@color/yellow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            />
+
+        <ImageView
+            android:id="@+id/cartimg"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/carticon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gems"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/coinshome_layout"
+        android:clipToPadding="false"
+        android:elevation="5dp"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/gemspng2"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/gemsamounttext"
+            android:layout_width="85dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:background="#DCDCDC"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical|end"
+            android:paddingRight="5dp"
+            android:text="90"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:shadowColor="#00F10A"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/carticon" />
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/buyall"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/backorange"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="PURCHASE ALL AT ONCE"
+        android:padding="5dp">
+
+    </Button>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

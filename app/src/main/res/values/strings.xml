@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="player1nameHint">player1 name</string>
+    <string name="player2nameHint">player2 name</string>
+    <string name="action_settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_afterstart">Tic Tac Toe</string>
+    <string name="versionname">version 1.0.4</string>
+    <string name="title_activity_storymode">FullscreenActivity</string>
+
+     <string name="update">Update</string>
+    <string name="play_license">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjPxLfOjUt5czuaUlq5pTE0A/+xvhxmMtLVGD0eOnYZ3QWP97dPgENCnXjMWmHQXnOQoAzHzNnow0BCyokA9yuN2FxBHsss37h80kYtt+xovRwOmBubBw1nftGyxxXwmKmmZby78u0723OBORO2OAGk0rhf4UD0qBGznARVQL1YvmvZWvFFQnX3HpmJKvf4E3bqbpseMxzpoFULymKUY8MY5DtAJLw+Nj7AIJBwt8tbO1kuo7+ooDZKeLu4guabwnE+/XReuUGmXBnPqncrncgbxMI7/LYBY9TtdKxWvGuisWlcqOCT++Vcf22uKxCsaNveoni9NgfpStiS7Se9zbnQIDAQAB</string>
+    <string name="_7">7</string>
+    <string name="app_id">976496286580</string>
+    <string name="my_achievement_id1">CgkI9Lbb3bUcEAIQAQ</string>
+    <string name="leaderboard_id1">CgkI9Lbb3bUcEAIQAg</string>
+    <string name="my_achievement_id2">CgkI9Lbb3bUcEAIQAw</string>
+    <string name="my_achievement_id3">CgkI9Lbb3bUcEAIQBA</string>
+    <string name="my_achievement_id4">CgkI9Lbb3bUcEAIQBQ</string>
+    <string name="my_achievement_id5">CgkI9Lbb3bUcEAIQBg</string>
+    <string name="my_achievement_id6">CgkI9Lbb3bUcEAIQBw</string>
+    <string name="my_achievement_id7">CgkI9Lbb3bUcEAIQCA</string>
+    <string name="my_achievement_id8">CgkI9Lbb3bUcEAIQCQ</string>
+    <string name="my_achievement_id9">CgkI9Lbb3bUcEAIQCg</string>
+    <string name="my_achievement_id10">CgkI9Lbb3bUcEAIQCw</string>
+    <string name="my_achievement_id12">CgkI9Lbb3bUcEAIQDQ</string>
+    <string name="my_achievement_id11">CgkI9Lbb3bUcEAIQDA</string>
+    <string name="my_achievement_id13">"CgkI9Lbb3bUcEAIQDg "</string>
+    <string name="my_achievement_id14">CgkI9Lbb3bUcEAIQDw</string>
+    <string name="my_achievement_id15">CgkI9Lbb3bUcEAIQEA</string>
+    <string name="my_achievement_id16">CgkI9Lbb3bUcEAIQEQ</string>
+    <string name="my_achievement_id17">CgkI9Lbb3bUcEAIQEg</string>
+    <string name="my_achievement_id18">CgkI9Lbb3bUcEAIQEw</string>
+    <string name="my_achievement_id19">CgkI9Lbb3bUcEAIQFA</string>
+    <string name="my_achievement_id20">CgkI9Lbb3bUcEAIQFQ</string>
+    <string name="my_achievement_id21">CgkI9Lbb3bUcEAIQFg</string>
+    <string name="my_achievement_id22">CgkI9Lbb3bUcEAIQFw</string>
+    <string name="my_achievement_id23">CgkI9Lbb3bUcEAIQGA</string>
+    <string name="my_achievement_id24">CgkI9Lbb3bUcEAIQGQ</string>
+    <string name="my_achievement_id25">CgkI9Lbb3bUcEAIQGg</string>
+    <string name="my_achievement_id26">CgkI9Lbb3bUcEAIQGw</string>
+    <string name="my_achievement_id27">CgkI9Lbb3bUcEAIQHA</string>
+    <string name="my_achievement_id28">CgkI9Lbb3bUcEAIQAQ</string>
+    <string name="leaderboard_id">"CgkI9Lbb3bUcEAIQAg"</string>
+    <string name="my_achievement_id29">CgkI9Lbb3bUcEAIQAw</string>
+    <string name="mainrewarded">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="facebook_app_id">1568770013617930</string>
+    <string name="fb_login_protocol_scheme">fb1568770013617930</string>
+    <string name="facebook_client_token">b9694cab3e22d4a03323428d808d4829</string>
+</resources>
