@@ -1,7 +1,3 @@
-Here’s your complete `README.md` with all the icons and technology sections included:
-
----
-
 # 🎮 TicTacToe Android Game
 
 ## Overview
@@ -38,77 +34,62 @@ TicTacToe is a feature-rich multiplayer game built using Android Studio and Java
 
 ### 1. **🌐 Online Multiplayer (1v1)**
 
-![Online Multiplayer Choose](screenshots/onlinemultichoose.jpg)
-
-![Online Multiplayer choosebet](screenshots/onlinemultichoosebet.jpg)
-
-![Online Multiplayer Pick](screenshots/pickMulti.jpg)
-
-![Online Multiplayer Game](screenshots/onlineMulti.jpg)
+<img src="screenshots/onlinemultichoose.jpg" alt="Online Multiplayer Choose" width="300">
+<img src="screenshots/onlinemultichoosebet.jpg" alt="Online Multiplayer Choose Bet" width="300">
+<img src="screenshots/pickMulti.jpg" alt="Online Multiplayer Pick" width="300">
+<img src="screenshots/onlineMulti.jpg" alt="Online Multiplayer Game" width="300">
 
 ### 2. **🗺️ Story Mode**
 
-![Story Mode Map](screenshots/storyChoose.jpg)
-
-![Story Mode Levels](screenshots/storylevels.jpg)
-
-![Story Mode Levelplay](screenshots/storyLevelplay.jpg)
-
-![Story Mode Play](screenshots/storyPlay.jpg)
-
-![Story Mode Won](screenshots/storyWon.jpg)
+<img src="screenshots/storyChoose.jpg" alt="Story Mode Map" width="300">
+<img src="screenshots/storylevels.jpg" alt="Story Mode Levels" width="300">
+<img src="screenshots/storyLevelplay.jpg" alt="Story Mode Level Play" width="300">
+<img src="screenshots/storyPlay.jpg" alt="Story Mode Play" width="300">
+<img src="screenshots/storyWon.jpg" alt="Story Mode Won" width="300">
 
 ### 3. **🤖 AI Practice Mode**
 
-![AI Practice Mode](screenshots/practiceAIChoose.jpg)
-
-![AI Practice Pick](screenshots/pick.jpg)
-
-![AI Practice play](screenshots/Aiplay.jpg)
+<img src="screenshots/practiceAIChoose.jpg" alt="AI Practice Mode" width="300">
+<img src="screenshots/pick.jpg" alt="AI Practice Pick" width="300">
+<img src="screenshots/Aiplay.jpg" alt="AI Practice Play" width="300">
 
 ### 4. **🕹️ Private Table**
 
-![Multiplayer Choose](screenshots/privatetablechoose.jpg)
-
-![Multiplayer Name](screenshots/privatetablename.jpg)
-
-![Multiplayer Play](screenshots/privatetableplay.jpg)
+<img src="screenshots/privatetablechoose.jpg" alt="Multiplayer Choose" width="300">
+<img src="screenshots/privatetablename.jpg" alt="Multiplayer Name" width="300">
+<img src="screenshots/privatetableplay.jpg" alt="Multiplayer Play" width="300">
 
 ### 5. **🎨 Themes**
 
-![Theme Selection](screenshots/themeChoose.jpg)
-
-![Theme Selection 2](screenshots/themeStart1.jpg)
-
-![Theme Selection 2](screenshots/themeStart.jpg)
-
-![Theme Selection 3](screenshots/themeEnd.jpg)
+<img src="screenshots/themeChoose.jpg" alt="Theme Selection" width="300">
+<img src="screenshots/themeStart1.jpg" alt="Theme Selection 2" width="300">
+<img src="screenshots/themeStart.jpg" alt="Theme Selection 3" width="300">
+<img src="screenshots/themeEnd.jpg" alt="Theme Selection 4" width="300">
 
 ### 6. **🏆 Achievements**
 
-![Achievements](screenshots/achievements.jpg)
+<img src="screenshots/achievements.jpg" alt="Achievements" width="300">
 
 ### 7. **🥇 Leaderboard**
 
-![Leaderboard](screenshots/leaderboard.jpg)
+<img src="screenshots/leaderboard.jpg" alt="Leaderboard" width="300">
 
 ### 8. **🛒 In-App Purchase Store**
 
-![In-App Purchase Store](screenshots/iapcoin.jpg)
-
-![In-App Purchase Gems](screenshots/iapgem.jpg)
+<img src="screenshots/iapcoin.jpg" alt="In-App Purchase Store" width="300">
+<img src="screenshots/iapgem.jpg" alt="In-App Purchase Gems" width="300">
 
 ### 9. **📱 AdMob Integration**
 
-![AdMob Integration](screenshots/advideo.jpg)
+<img src="screenshots/advideo.jpg" alt="AdMob Integration" width="300">
 
 ### 10. **🎮 Google Play Games Login**
 
-![GPG](screenshots/signIN.jpg)
+<img src="screenshots/signIN.jpg" alt="Google Play Games Login" width="300">
 
 ### 11. **⚙️ Settings**
 
-![Settings](screenshots/settings.jpg)
+<img src="screenshots/settings.jpg" alt="Settings" width="300">
 
 ## 🛠️ Technologies & Tools
 
