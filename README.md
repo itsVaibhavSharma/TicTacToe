@@ -34,62 +34,84 @@ TicTacToe is a feature-rich multiplayer game built using Android Studio and Java
 
 ### 1. **🌐 Online Multiplayer (1v1)**
 
-<img src="screenshots/onlinemultichoose.jpg" alt="Online Multiplayer Choose" width="300">
-<img src="screenshots/onlinemultichoosebet.jpg" alt="Online Multiplayer Choose Bet" width="300">
-<img src="screenshots/pickMulti.jpg" alt="Online Multiplayer Pick" width="300">
-<img src="screenshots/onlineMulti.jpg" alt="Online Multiplayer Game" width="300">
+<p align="center">
+  <img src="screenshots/onlinemultichoose.jpg" width="200" />
+  <img src="screenshots/onlinemultichoosebet.jpg" width="200" />
+  <img src="screenshots/pickMulti.jpg" width="200" />
+  <img src="screenshots/onlineMulti.jpg" width="200" />
+</p>
 
 ### 2. **🗺️ Story Mode**
 
-<img src="screenshots/storyChoose.jpg" alt="Story Mode Map" width="300">
-<img src="screenshots/storylevels.jpg" alt="Story Mode Levels" width="300">
-<img src="screenshots/storyLevelplay.jpg" alt="Story Mode Level Play" width="300">
-<img src="screenshots/storyPlay.jpg" alt="Story Mode Play" width="300">
-<img src="screenshots/storyWon.jpg" alt="Story Mode Won" width="300">
+<p align="center">
+  <img src="screenshots/storyChoose.jpg" width="200" />
+  <img src="screenshots/storylevels.jpg" width="200" />
+  <img src="screenshots/storyLevelplay.jpg" width="200" />
+  <img src="screenshots/storyPlay.jpg" width="200" />
+  <img src="screenshots/storyWon.jpg" width="200" />
+</p>
 
 ### 3. **🤖 AI Practice Mode**
 
-<img src="screenshots/practiceAIChoose.jpg" alt="AI Practice Mode" width="300">
-<img src="screenshots/pick.jpg" alt="AI Practice Pick" width="300">
-<img src="screenshots/Aiplay.jpg" alt="AI Practice Play" width="300">
+<p align="center">
+  <img src="screenshots/practiceAIChoose.jpg" width="200" />
+  <img src="screenshots/pick.jpg" width="200" />
+  <img src="screenshots/Aiplay.jpg" width="200" />
+</p>
 
 ### 4. **🕹️ Private Table**
 
-<img src="screenshots/privatetablechoose.jpg" alt="Multiplayer Choose" width="300">
-<img src="screenshots/privatetablename.jpg" alt="Multiplayer Name" width="300">
-<img src="screenshots/privatetableplay.jpg" alt="Multiplayer Play" width="300">
+<p align="center">
+  <img src="screenshots/privatetablechoose.jpg" width="200" />
+  <img src="screenshots/privatetablename.jpg" width="200" />
+  <img src="screenshots/privatetableplay.jpg" width="200" />
+</p>
 
 ### 5. **🎨 Themes**
 
-<img src="screenshots/themeChoose.jpg" alt="Theme Selection" width="300">
-<img src="screenshots/themeStart1.jpg" alt="Theme Selection 2" width="300">
-<img src="screenshots/themeStart.jpg" alt="Theme Selection 3" width="300">
-<img src="screenshots/themeEnd.jpg" alt="Theme Selection 4" width="300">
+<p align="center">
+  <img src="screenshots/themeChoose.jpg" width="200" />
+  <img src="screenshots/themeStart1.jpg" width="200" />
+  <img src="screenshots/themeStart.jpg" width="200" />
+  <img src="screenshots/themeEnd.jpg" width="200" />
+</p>
 
 ### 6. **🏆 Achievements**
 
-<img src="screenshots/achievements.jpg" alt="Achievements" width="300">
+<p align="center">
+  <img src="screenshots/achievements.jpg" width="200" />
+</p>
 
 ### 7. **🥇 Leaderboard**
 
-<img src="screenshots/leaderboard.jpg" alt="Leaderboard" width="300">
+<p align="center">
+  <img src="screenshots/leaderboard.jpg" width="200" />
+</p>
 
 ### 8. **🛒 In-App Purchase Store**
 
-<img src="screenshots/iapcoin.jpg" alt="In-App Purchase Store" width="300">
-<img src="screenshots/iapgem.jpg" alt="In-App Purchase Gems" width="300">
+<p align="center">
+  <img src="screenshots/iapcoin.jpg" width="200" />
+  <img src="screenshots/iapgem.jpg" width="200" />
+</p>
 
 ### 9. **📱 AdMob Integration**
 
-<img src="screenshots/advideo.jpg" alt="AdMob Integration" width="300">
+<p align="center">
+  <img src="screenshots/advideo.jpg" width="200" />
+</p>
 
 ### 10. **🎮 Google Play Games Login**
 
-<img src="screenshots/signIN.jpg" alt="Google Play Games Login" width="300">
+<p align="center">
+  <img src="screenshots/signIN.jpg" width="200" />
+</p>
 
 ### 11. **⚙️ Settings**
 
-<img src="screenshots/settings.jpg" alt="Settings" width="300">
+<p align="center">
+  <img src="screenshots/settings.jpg" width="200" />
+</p>
 
 ## 🛠️ Technologies & Tools
 
